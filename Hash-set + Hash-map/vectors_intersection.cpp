@@ -21,9 +21,9 @@ public:
         }
         
         for(std::vector<int>::iterator it = nums2.begin(); it != nums2.end(); ++it) {
-            if(u_set.count(*it)) {
-                res.push_back(*it);
-                u_set.erase(*it);
+            if(u_set.count(*it)) {      // Check if this number has been seen in the other vector
+                res.push_back(*it);     // and if so, we insert it into the vector.
+                u_set.erase(*it);       // Erase the inserted number to avoid duplicates.
             }
         }
         

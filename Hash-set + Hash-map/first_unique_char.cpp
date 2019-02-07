@@ -11,9 +11,12 @@ Time complexity:
 #include <string>
 #include <unordered_map>
 
+// In order to be able to only traverse the string once, the information about 
+// the occurrence and position must be preserved. Hence a struct is used to
+// keep those values.
 struct info {
-            int occurrance;
-            int position;
+    int occurrence;
+    int position;
 };
 
 class Solution {
@@ -23,12 +26,12 @@ public:
         int res = INT_MAX; 
         
         for(int i = 0; i < s.length(); i++) {
-            map[s[i]].occurrance++;
+            map[s[i]].occurrence++;
             map[s[i]].position = i;
         }
         
         for(auto x : map) {
-            if(x.second.occurrance == 1 && x.second.position < res) {
+            if(x.second.occurrence == 1 && x.second.position < res) {
                 res = x.second.position;
             }
         }

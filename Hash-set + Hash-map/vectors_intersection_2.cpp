@@ -23,6 +23,9 @@ public:
         std::vector<int> big_vec = (nums1.size() > nums2.size()) ? nums1 : nums2;
         std::vector<int> res;
         
+        // Creating a map for the larger vector will save time as looking up
+        // values in the map is faster than in a vector. Hence we save most
+        // time by putting the vector with more values into the map.
         for(const auto &x : big_vec) {
             if(map.find(x) != map.end()) {
                 (map[x])++;
@@ -34,6 +37,15 @@ public:
         
         std::vector<int> small_vec = (big_vec == nums1) ? nums2 : nums1;
         
+        // Since the value in the map keeps track of how many occurrences of the
+        // number there are in the larger vector, we insert the minimum between:
+        // number of occurrences of the number in big_vec and number of occurrences 
+        // of the number in small_vec.
+
+        // By decrementing the value in the map, we signify that this number (key)
+        // has occurred in the small_vec for one time.
+        // If the value is 0, that means the big_vec had no more occurrences of this
+        // number (key) and hence it is not an intersection.
         for(auto &it : small_vec) {
             if(map.find(it) != map.end() && map[it] != 0) {
                 map[it] -= 1;

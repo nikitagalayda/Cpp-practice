@@ -29,7 +29,8 @@ public:
     bool isHappy(int n) {
 
     	while(n != 1) {
-
+    		// If this number was already seen, that means we have entered a
+    		// loop.
 	    	if(seen_set.count(n) > 0) {
 	    		return false;
 	    	}
