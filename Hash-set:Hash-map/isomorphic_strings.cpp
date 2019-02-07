@@ -1,8 +1,10 @@
 /*
-Description: Given two strings, s and t, checks whether or not the strings are isomorphic.
-Two strings are isomorphic if the characters in s can be replaced to get t.
+Description: 
+	Given two strings, s and t, checks whether or not the strings are isomorphic.
+	Two strings are isomorphic if the characters in s can be replaced to get t.
 
-Time complexity: O(N) at worst. 
+Time complexity: 
+	O(N) at worst. 
 */
 
 #include <string>

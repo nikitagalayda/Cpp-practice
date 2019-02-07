@@ -1,7 +1,9 @@
 /*
-Description: Given a vector of numbers where every number is duplicated except for one, returns that unique number.
+Description: 
+	Given a vector of numbers where every number is duplicated except for one, returns that unique number.
 
-Time Complexity: O(N)
+Time Complexity: 
+	O(N)
 
 LOGIC:
 

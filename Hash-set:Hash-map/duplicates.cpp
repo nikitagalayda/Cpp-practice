@@ -1,4 +1,10 @@
-/* A class which finds whether there are duplicates in the passed vector */
+/* 
+Description:
+	Given a vector, returns whether there are duplicates in the passed vector 
+
+Time Complexity:
+	O(N) where N is the size of the vector.
+*/
 
 #include <unordered_set>
 #include <vector>

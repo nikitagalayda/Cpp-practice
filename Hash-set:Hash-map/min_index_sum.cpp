@@ -1,9 +1,11 @@
 /*
-Desciption: Given two vectors containing strings, returns a vector of strings
-with the least list index sum, which is the least sum of indeces of common
-strings in both lists. 
+Desciption: 
+	Given two vectors containing strings, returns a vector of strings
+	with the least list index sum, which is the least sum of indeces of common
+	strings in both lists. 
 
-Time Complexity: O(N+M) where N and M are lengths of the lists. 
+Time Complexity: 
+	O(N+M) where N and M are lengths of the lists. 
 */
 
 #include <string>

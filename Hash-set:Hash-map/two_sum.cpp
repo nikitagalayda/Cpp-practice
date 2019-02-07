@@ -1,11 +1,13 @@
 /*
-Description: Given an vector of unique integers, and a target integer value, 
-returns indeces of two integers in the vector such that they add up to the 
-target value.
+Description: 
+	Given an vector of unique integers, and a target integer value, 
+	returns indeces of two integers in the vector such that they add up to the 
+	target value.
 
-Time Complexity: At most O(N), where N is the size of the vector. We reach 
-this complexity if we have to iterate through the whole vector, which can occur
-if one the values of the answer pair is at the end of the vector. 
+Time Complexity: 
+	At most O(N), where N is the size of the vector. We reach 
+	this complexity if we have to iterate through the whole vector, which can occur
+	if one the values of the answer pair is at the end of the vector. 
 */
 
 class Solution {

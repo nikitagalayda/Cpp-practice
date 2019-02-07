@@ -1,8 +1,10 @@
 /*
-Description: Returns the intersection of two vectors (intersection being the numbers that both vectors contain)
-in the form of a vector.
+Description: 
+	Returns the intersection of two vectors (intersection being the numbers that both vectors contain)
+	in the form of a vector.
 
-Time Complexity: O(N)
+Time Complexity: 
+	O(N)
 */
 
 #include <unordered_set>
